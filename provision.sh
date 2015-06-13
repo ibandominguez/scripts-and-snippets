@@ -5,7 +5,7 @@
 brewPackages=(php56 mcrypt php56-mcrypt mysql postgresql mongodb git brew-cask homebrew/php/composer nginx homebrew/apache/httpd24 tree)
 casksPackages=(google-chrome node firefox virtualbox vagrant vagrant-manager filezilla atom skype sequel-pro)
 composerPackages=(laravel/installer laravel/homestead phpunit/phpunit codeception/codeception)
-npmPackages=(grunt-cli gulp bower nodemon sails phonegap cordova jade express)
+npmPackages=(grunt-cli gulp bower nodemon sails forever phonegap cordova jade express)
 
 # install homebrew
 
