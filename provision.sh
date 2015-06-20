@@ -2,14 +2,14 @@
 
 # packages
 
-brewPackages=(php56 mcrypt php56-mcrypt mysql postgresql mongodb git brew-cask homebrew/php/composer nginx homebrew/apache/httpd24 tree)
+brewPackages=(php56 mcrypt php56-mcrypt mysql postgresql mongodb git brew-cask homebrew/php/composer nginx homebrew/apache/httpd24 tree curl)
 casksPackages=(google-chrome node firefox virtualbox vagrant vagrant-manager filezilla atom skype sequel-pro)
 composerPackages=(laravel/installer laravel/homestead phpunit/phpunit codeception/codeception)
 npmPackages=(grunt-cli gulp bower nodemon sails protactor phantomjs forever phonegap cordova jade express)
 
 # install homebrew
 
-echo "=> installing homebrew"
+echo "LOG => installing homebrew \n\n"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor && brew update && brew upgrade
 
@@ -21,7 +21,7 @@ brew tap homebrew/php
 
 # brewPackages
 
-echo "=> installing brewPackages"
+echo "LOG => installing brewPackages \n\n"
 for i in "${brewPackages[@]}"
 	do
 	  brew install $i
@@ -29,7 +29,7 @@ for i in "${brewPackages[@]}"
 
 # casksPackages
 
-echo "=> installing casksPackages"
+echo "LOG => installing casksPackages \n\n"
 for i in "${casksPackages[@]}"
 	do
 	  brew cask install $i
@@ -37,7 +37,7 @@ for i in "${casksPackages[@]}"
 
 # composerPackages
 
-echo "=> installing composerPackages"
+echo "LOG => installing composerPackages \n\n"
 for i in "${composerPackages[@]}"
 	do
 	  sudo composer global require $i
@@ -45,8 +45,13 @@ for i in "${composerPackages[@]}"
 
 # npmPackages
 
-echo "=> installing npmPackages"
+echo "LOG => installing npmPackages \n\n"
 for i in "${npmPackages[@]}"
 	do
 	  sudo npm install $i -g
 	done
+
+# install zshrc
+
+echo "LOG => installing zshrc \n\n"
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
