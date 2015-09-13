@@ -2,7 +2,7 @@
 
 # packages
 
-brewPackages=(php56 mcrypt php56-mcrypt mysql redis postgresql mongodb git brew-cask homebrew/php/composer nginx homebrew/apache/httpd24 tree curl)
+brewPackages=(php56 mcrypt php56-mcrypt mysql redis postgresql mongodb git brew-cask homebrew/php/composer nginx homebrew/apache/httpd24 tree curl android-sdk)
 casksPackages=(google-chrome node firefox virtualbox vagrant vagrant-manager filezilla atom skype sequel-pro)
 composerPackages=(laravel/installer laravel/homestead phpunit/phpunit codeception/codeception squizlabs/php_codesniffer)
 npmPackages=(grunt-cli gulp bower nodemon sails protactor phantomjs forever phonegap cordova jade express)
