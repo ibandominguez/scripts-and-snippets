@@ -1,8 +1,6 @@
-# mac-provision
+# Provisioning scripts
 
-mac provisioning script
-
-Just a basic provisioning sh which main goal is to install all deps required.
+A collection of scripts to setup a development environment on a fresh os
 
 # license
 
