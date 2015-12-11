@@ -9,7 +9,7 @@ npmPackages=(grunt-cli gulp bower nodemon sails protactor phantomjs forever phon
 
 # install homebrew
 
-echo "LOG => installing homebrew \n\n"
+echo "LOG => installing homebrew"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor && brew update && brew upgrade
 
@@ -21,7 +21,7 @@ brew tap homebrew/php
 
 # brewPackages
 
-echo "LOG => installing brewPackages \n\n"
+echo "LOG => installing brewPackages"
 for i in "${brewPackages[@]}"
 	do
 	  brew install $i
@@ -29,7 +29,7 @@ for i in "${brewPackages[@]}"
 
 # casksPackages
 
-echo "LOG => installing casksPackages \n\n"
+echo "LOG => installing casksPackages"
 for i in "${casksPackages[@]}"
 	do
 	  brew cask install $i
@@ -37,7 +37,7 @@ for i in "${casksPackages[@]}"
 
 # composerPackages
 
-echo "LOG => installing composerPackages \n\n"
+echo "LOG => installing composerPackages"
 for i in "${composerPackages[@]}"
 	do
 	  sudo composer global require $i
@@ -45,7 +45,7 @@ for i in "${composerPackages[@]}"
 
 # npmPackages
 
-echo "LOG => installing npmPackages \n\n"
+echo "LOG => installing npmPackages"
 for i in "${npmPackages[@]}"
 	do
 	  sudo npm install $i -g
@@ -53,5 +53,5 @@ for i in "${npmPackages[@]}"
 
 # install zshrc
 
-echo "LOG => installing zshrc \n\n"
+echo "LOG => installing zshrc"
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
