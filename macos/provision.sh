@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+# check if running as sudo
+
+if [[ $UID == 0 ]]; then
+  echo "LOG => Please don´t run this script as sudo, it will ask for your password when required"
+  exit 1
+fi
+
 # packages
 
 brewPackages=(php56 mcrypt php56-mcrypt mysql redis postgresql mongodb git brew-cask homebrew/php/composer nginx homebrew/apache/httpd24 tree curl android-sdk)
