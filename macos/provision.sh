@@ -14,6 +14,11 @@ casksPackages=(google-chrome node firefox virtualbox vagrant vagrant-manager fil
 composerPackages=(laravel/installer laravel/homestead phpunit/phpunit codeception/codeception squizlabs/php_codesniffer)
 npmPackages=(grunt-cli gulp bower nodemon sails protactor phantomjs forever phonegap cordova jade express)
 
+# install xcode
+
+echo "LOG => installing xcode"
+xcode-select --install
+
 # install homebrew
 
 echo "LOG => installing homebrew"
