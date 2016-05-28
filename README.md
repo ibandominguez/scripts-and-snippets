@@ -2,7 +2,25 @@
 
 A collection of scripts to setup a development environment on a fresh os
 
-# license
+# Getting started
+
+```sh
+git clone https://github.com/ibandominguez/provisioning-scripts.git
+cd provisioning-scripts
+```
+
+# Vagrant and Ubuntu scripts
+
+Keep in mind you need Vagrant and a VM provider
+
+```sh
+vagrant up
+vagrant ssh
+cd /vagrant # default shared folder
+bash ubuntu/lamp.sh # run the script you would like to use
+```
+
+# License
 
 The MIT License (MIT)
 
