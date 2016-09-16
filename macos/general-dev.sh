@@ -11,8 +11,8 @@ fi
 
 brewPackages=(php56 mcrypt php56-mcrypt sqlite3 mysql redis node caskroom/versions/java7 imagemagick graphicsmagick postgresql mongodb git brew-cask homebrew/php/composer nginx homebrew/apache/httpd24 tree curl android-sdk python install sdl2 sdl2_image sdl2_ttf sdl2_mixer gstreamer watchman)
 casksPackages=(google-chrome firefox virtualbox vagrant vagrant-manager filezilla atom skype sequel-pro arduino opera qlmarkdown quicklook-json qlprettypatch betterzipql qlimagesize webpquicklook android-studio)
-composerPackages=(laravel/installer laravel/homestead phpunit/phpunit codeception/codeception squizlabs/php_codesniffer)
-npmPackages=(grunt-cli gulp bower yo generator-karma generator-angular nodemon sails protractor phantomjs forever phonegap cordova jade express ionic react-native-cli)
+composerPackages="laravel/installer laravel/homestead phpunit/phpunit codeception/codeception squizlabs/php_codesniffer"
+npmPackages="grunt-cli gulp bower yo generator-karma generator-angular nodemon sails protractor phantomjs forever phonegap cordova jade express ionic react-native-cli"
 
 # install xcode
 
@@ -50,18 +50,12 @@ for i in "${casksPackages[@]}"
 # composerPackages
 
 echo "LOG => installing composerPackages"
-for i in "${composerPackages[@]}"
-	do
-	  sudo composer global require $i
-	done
+sudo composer global require $composerPackages
 
 # npmPackages
 
 echo "LOG => installing npmPackages"
-for i in "${npmPackages[@]}"
-	do
-	  sudo npm install $i -g
-	done
+sudo npm install $npmPackages -g
 
 # install zshrc
 
