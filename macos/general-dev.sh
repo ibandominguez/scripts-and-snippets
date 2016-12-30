@@ -9,7 +9,7 @@ fi
 
 # packages
 
-brewPackages=(homebrew/php/php70 mcrypt php70-mcrypt sqlite3 mysql redis node imagemagick graphicsmagick postgresql mongodb heroku git brew-cask homebrew/php/composer nginx homebrew/apache/httpd24 tree curl android-sdk python docker boot2docker install sdl2 sdl2_image sdl2_ttf sdl2_mixer gstreamer watchman)
+brewPackages=(homebrew/php/php70 mcrypt php70-mcrypt sqlite3 mysql redis node imagemagick graphicsmagick postgresql mongodb heroku git brew-cask homebrew/php/composer nginx homebrew/apache/httpd24 tree curl android-sdk python docker boot2docker install sdl2 sdl2_image sdl2_ttf sdl2_mixer gstreamer watchman gimp)
 casksPackages=(google-chrome firefox mysqlworkbench virtualbox vagrant vagrant-manager filezilla atom skype java sequel-pro arduino opera qlmarkdown quicklook-json qlprettypatch betterzipql qlimagesize webpquicklook android-studio)
 composerPackages="laravel/installer laravel/homestead phpunit/phpunit codeception/codeception squizlabs/php_codesniffer"
 npmPackages="grunt-cli gulp bower yo generator-karma generator-angular nodemon sails protractor phantomjs forever phonegap cordova jade express ionic react-native-cli ios-sim ios-deploy jasmine-node"
