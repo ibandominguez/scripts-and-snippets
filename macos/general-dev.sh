@@ -12,7 +12,7 @@ fi
 brewPackages=(homebrew/php/php70 mcrypt php70-mcrypt sqlite3 mysql gphoto2 redis node imagemagick graphicsmagick postgresql mongodb heroku git brew-cask homebrew/php/composer nginx homebrew/apache/httpd24 tree jq curl android-sdk python docker boot2docker install sdl2 sdl2_image sdl2_ttf sdl2_mixer gstreamer watchman)
 casksPackages=(google-chrome firefox mysqlworkbench virtualbox vagrant vagrant-manager filezilla atom skype java sequel-pro arduino opera qlmarkdown quicklook-json qlprettypatch betterzipql qlimagesize webpquicklook android-studio Caskroom/cask/gimp wireshark)
 composerPackages="laravel/installer laravel/homestead phpunit/phpunit codeception/codeception squizlabs/php_codesniffer"
-npmPackages="grunt-cli gulp bower yo webpack generator-karma generator-angular nodemon sails protractor phantomjs forever phonegap cordova jade express ionic react-native-cli ios-sim ios-deploy jasmine-node"
+npmPackages="grunt-cli gulp bower yo webpack generator-karma generator-angular nodemon sails protractor phantomjs forever nightwatch phonegap cordova jade express ionic react-native-cli ios-sim ios-deploy jasmine-node"
 
 # install xcode
 
