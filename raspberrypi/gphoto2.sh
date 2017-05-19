@@ -1,22 +1,11 @@
-# Install Dependencies
-sudo apt-get install libltdl-dev libusb-dev libusb-1.0 libexif-dev libpopt-dev
+# This script has been tested on a raspberry pi 3
+# On the following raspian release:
 
-# Download Latest libgphoto2
-wget http://downloads.sourceforge.net/project/gphoto/libgphoto/2.5.7/libgphoto2-2.5.7.tar.gz
+# Minimal image based on Debian Jessie
+# Version: April 2017
+# Release date: 2017-04-10
+# Kernel version: 4.4
+# SHA-1:c24a4c7dd1a5957f303193fee712d0d2c0c6372d
 
-# Download Latest gphoto2
-wget http://downloads.sourceforge.net/project/gphoto/gphoto/2.5.6/gphoto2-2.5.6.tar.gz
-
-# Install libgphoto2
-tar -xvzf libgphoto2-2.5.7.tar.gz
-cd libgphoto2-2.5.7
-./configure
-make #This is going to take some time. Go get a cup of coffee.
-sudo make install
-
-# Install gphoto2
-tar -xvzf gphoto2-2.5.6.tar.gz
-cd gphoto2-2.5.6
-./configure
-make #Much faster then libgphoto2
-sudo make install
+sudo apt-get update
+sudo apt get install gphoto2 -y
