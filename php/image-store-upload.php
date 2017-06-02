@@ -42,5 +42,5 @@ if (move_uploaded_file($file['tmp_name'], $targetFileName)):
   die(json_encode(['url' => MEDIA_URL.$targetFileName]));
 else:
   header('HTTP/1.1 500 Internal Server Error');
-  die(json_encode(['error' => 'The file size must be lower thab '.MAX_SIZE]));
+  die(json_encode(['error' => 'The file could not be uploaded']));
 endif;
