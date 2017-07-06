@@ -1,12 +1,18 @@
-# Provisioning scripts
+# General scripts
 
-A collection of scripts to setup a development environment on a fresh os
+A collection of scripts from day2day tasks to env setup
 
 # Getting started
 
 ```sh
 git clone https://github.com/ibandominguez/provisioning-scripts.git
 cd provisioning-scripts
+```
+
+# Provisionning your macos
+
+```sh
+curl https://raw.githubusercontent.com/ibandominguez/scripts/master/macos/general-dev.sh | sh
 ```
 
 # Vagrant and Ubuntu scripts
