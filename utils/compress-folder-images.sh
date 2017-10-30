@@ -4,4 +4,4 @@
 # sudo apt-get install jpegoptim, brew install jpegoptim ...
 
 # compress all *.jpg files in the current directory 
-for i in *.jpg; do jpegoptim "$i"; done
+find . -name "*.jpg" | xargs jpegoptim
