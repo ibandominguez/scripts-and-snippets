@@ -2,14 +2,20 @@
 
 # This file should be located in .git/hooks/post-receive
 
+REP_PATH=<your-repo-path>
+SRC_PATH=<your-project-path>
+
 # Checkout location
-git --work-tree=/var/projects/project --git-dir=/var/repos/repo.git checkout -f
+git --work-tree=$SRC_PATH --git-dir=$REP_PATH checkout -f
 
 # Working directory
-cd /var/projects/urekon-api
+cd $SRC_PATH
 
 # Install dependencies
 composer install
+
+# Migrate database
+php artisan migrate
 
 # Environment config
 echo "
