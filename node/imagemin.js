@@ -13,9 +13,11 @@ const imageresize = require('gulp-image-resize')
 const imagemin = require('gulp-imagemin')
 const pngquant = require('imagemin-pngquant')
 
+const sourcePattern = '/path/to/your/images/*'
+
 gulp.task('images', () => {
   return gulp
-    .src('source/*')
+    .src(sourcePattern)
     .pipe(imageresize({
       width: 1200,
       crop: false,
