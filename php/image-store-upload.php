@@ -2,6 +2,25 @@
 
 header('Content-Type: application/json');
 
+// Handle CORS
+if (isset($_SERVER['HTTP_ORIGIN'])):
+  header("Access-Control-Allow-Origin: {$_SERVER['HTTP_ORIGIN']}");
+  header('Access-Control-Allow-Credentials: true');
+  header('Access-Control-Max-Age: 86400');
+endif;
+
+if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS'):
+  if (isset($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_METHOD'])):
+    header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+  endif;
+
+  if (isset($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS'])):
+    header("Access-Control-Allow-Headers: {$_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']}");
+  endif;
+
+  exit(0);
+endif;
+
 const MEDIA_URL = 'http://localhost:9000/';
 const ALLOWED_TYPES = array('.jpg', '.jpeg', '.png', '.gif');
 const MAX_SIZE = 100000000000000;
