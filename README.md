@@ -17,10 +17,10 @@ curl https://raw.githubusercontent.com/ibandominguez/scripts/master/utils/instal
 # Install ohmyzh (Ubuntu)
 curl https://raw.githubusercontent.com/ibandominguez/scripts/master/ubuntu/install-ohmyzsh.sh | sh
 
-# Install Numix
+# Install Numix (GUI - Ubuntu)
 curl https://raw.githubusercontent.com/ibandominguez/scripts/master/ubuntu/install-numix.sh | sh
 
-# Install cinamon (ubuntu)
+# Install cinamon (Ubuntu)
 https://raw.githubusercontent.com/ibandominguez/scripts/master/ubuntu/cinnamon.sh
 ```
 
