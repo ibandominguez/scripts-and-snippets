@@ -7,12 +7,18 @@ A collection of scripts from day2day tasks to env setup
 ```sh
 # Provision Macos for General fullstack dev
 curl https://raw.githubusercontent.com/ibandominguez/scripts/master/macos/dev-provisioning.sh | sh
+
 # Provison Ubuntu for General fullstack dev
 curl https://github.com/ibandominguez/scripts/raw/master/ubuntu/dev-provisioning.sh | sh
+
 # Install vim + plugins (Macos, Ubuntu) requires [curl, git]
 curl https://raw.githubusercontent.com/ibandominguez/scripts/master/utils/install-vim.sh | sh
+
 # Install ohmyzh (Ubuntu)
 curl https://raw.githubusercontent.com/ibandominguez/scripts/master/ubuntu/install-ohmyzsh.sh | sh
+
+# Install cinamon (ubuntu)
+https://raw.githubusercontent.com/ibandominguez/scripts/master/ubuntu/cinnamon.sh
 ```
 
 ## License
