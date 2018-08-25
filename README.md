@@ -2,35 +2,24 @@
 
 A collection of scripts from day2day tasks to env setup
 
-# Getting started
+## Quick links to scripts to run from your terminal
 
 ```sh
-git clone https://github.com/ibandominguez/provisioning-scripts.git
-cd provisioning-scripts
+# Provision Macos for General fullstack dev
+curl https://raw.githubusercontent.com/ibandominguez/scripts/master/macos/dev-provisioning.sh | sh
+# Provison Ubuntu for General fullstack dev
+curl https://github.com/ibandominguez/scripts/raw/master/ubuntu/dev-provisioning.sh | sh
+# Install vim + plugins (Macos, Ubuntu) requires [curl, git]
+curl https://github.com/ibandominguez/scripts/raw/master/utils/install-vim.sh | sh
+# Install ohmyzh (Ubuntu)
+curl https://github.com/ibandominguez/scripts/raw/master/ubuntu/install-ohmyzsh.sh | sh
 ```
 
-# Provisionning your macos
-
-```sh
-curl https://raw.githubusercontent.com/ibandominguez/scripts/master/macos/general-dev.sh | sh
-```
-
-# Vagrant and Ubuntu scripts
-
-Keep in mind you need Vagrant and a VM provider
-
-```sh
-vagrant up
-vagrant ssh
-cd /vagrant # default shared folder
-bash ubuntu/lamp.sh # run the script you would like to use
-```
-
-# License
+## License
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Iban Dominguez
+Copyright (c) 2015 Ibán Domínguez
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
