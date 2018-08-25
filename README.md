@@ -10,9 +10,9 @@ curl https://raw.githubusercontent.com/ibandominguez/scripts/master/macos/dev-pr
 # Provison Ubuntu for General fullstack dev
 curl https://github.com/ibandominguez/scripts/raw/master/ubuntu/dev-provisioning.sh | sh
 # Install vim + plugins (Macos, Ubuntu) requires [curl, git]
-curl https://github.com/ibandominguez/scripts/raw/master/utils/install-vim.sh | sh
+curl https://raw.githubusercontent.com/ibandominguez/scripts/master/utils/install-vim.sh | sh
 # Install ohmyzh (Ubuntu)
-curl https://github.com/ibandominguez/scripts/raw/master/ubuntu/install-ohmyzsh.sh | sh
+curl https://raw.githubusercontent.com/ibandominguez/scripts/master/ubuntu/install-ohmyzsh.sh | sh
 ```
 
 ## License
