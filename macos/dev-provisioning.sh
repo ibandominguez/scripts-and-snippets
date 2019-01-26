@@ -9,12 +9,69 @@ fi
 
 # packages
 
-brewPackages=(homebrew/php/php71 mcrypt php71-mcrypt sqlite3 mysql gphoto2 redis node imagemagick graphicsmagick postgresql mongodb heroku git brew-cask homebrew/php/composer nginx homebrew/apache/httpd24 tree jq curl android-sdk python docker boot2docker install sdl2 sdl2_image sdl2_ttf sdl2_mixer gstreamer yarn watchman awscli)
-casksPackages=(google-chrome firefox mysqlworkbench virtualbox vagrant vagrant-manager filezilla atom skype java sequel-pro arduino opera qlmarkdown quicklook-json qlprettypatch betterzipql qlimagesize webpquicklook android-studio Caskroom/cask/gimp wireshark)
-composerPackages="laravel/installer laravel/homestead phpunit/phpunit codeception/codeception squizlabs/php_codesniffer"
-npmPackages="grunt-cli gulp bower yo webpack generator-karma generator-angular selenium-standalone firebase-tools nodemon sails protractor phantomjs forever nightwatch phonegap cordova jade express ionic react-native-cli  jasmine-node"
+packages=(
+  homebrew/php/php71
+  mcrypt
+  php71-mcrypt
+  sqlite3
+  mysql
+  gphoto2
+  redis
+  node
+  imagemagick
+  graphicsmagick
+  postgresql
+  mongodb
+  heroku
+  git
+  brew-cask
+  homebrew/php/composer
+  nginx
+  homebrew/apache/httpd24
+  tree
+  jq
+  curl
+  android-sdk
+  python
+  docker
+  boot2docker
+  install
+  sdl2
+  sdl2_image
+  sdl2_ttf
+  sdl2_mixer
+  gstreamer
+  yarn
+  watchman
+  awscli
+)
 
-# install xcode
+casks=(
+  google-chrome
+  firefox
+  mysqlworkbench
+  virtualbox
+  vagrant
+  vagrant-manager
+  filezilla
+  atom
+  skype
+  java
+  sequel-pro
+  arduino
+  opera
+  qlmarkdown
+  quicklook-json
+  qlprettypatch
+  betterzipql
+  qlimagesize
+  webpquicklook
+  android-studio
+  Caskroom/cask/gimp
+  wireshark
+)
+
+# Command Line Tools
 
 echo "LOG => installing xcode"
 xcode-select --install
@@ -33,7 +90,7 @@ brew tap homebrew/php
 
 # brewPackages
 
-echo "LOG => installing brewPackages"
+echo "LOG => installing brew packages"
 for i in "${brewPackages[@]}"
 	do
 	  brew install $i
@@ -41,21 +98,11 @@ for i in "${brewPackages[@]}"
 
 # casksPackages
 
-echo "LOG => installing casksPackages"
+echo "LOG => installing brew casks"
 for i in "${casksPackages[@]}"
 	do
 	  brew cask install $i
 	done
-
-# composerPackages
-
-echo "LOG => installing composerPackages"
-sudo composer global require $composerPackages
-
-# npmPackages
-
-echo "LOG => installing npmPackages"
-sudo npm install $npmPackages -g
 
 # install zshrc
 
