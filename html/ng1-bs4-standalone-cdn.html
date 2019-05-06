@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>App Title</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style media="screen">/* Your app styles */</style>
+  <!-- EndStyles -->
+</head>
+<body ng-app="app">
+  <div ng-view autoscroll="true"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular-route.min.js"></script>
+  <script type="text/javascript">
+  var app = angular.module('app', ['ngRoute']);
+
+  app.config(function($routeProvider, $locationProvider) {
+    $locationProvider.html5Mode(true);
+
+    $routeProvider
+      .when('/', { controller: 'HomeCtrl', template: '<div class="container py-5">$scope.hello: {{ hello }}</div>' })
+      .otherwise({ redirectTo: '/' });
+  });
+
+  app.controller('HomeCtrl', function($scope) {
+    $scope.hello = 'World!';
+  });
+
+  app.run(function() {
+    //
+  });
+  </script>
+  <!-- End Scripts -->
+</body>
+</html>
