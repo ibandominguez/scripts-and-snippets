@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>React + BS4 (CDN)</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!-- dependencias -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.14.0/babel.min.js"></script>
+
+    <!-- código de la app -->
+    <script data-plugins="transform-es2015-modules-umd" type="text/babel">
+    import React, { useState } from 'React'
+
+    function App() {
+      const [counter, setCounter] = useState(0)
+
+      return (
+        <div className={'d-flex justify-content-center align-items-center vh-100'}>
+          <button onClick={() => setCounter(counter + 1)}>+</button>
+          <div className={'p-5'}>{counter}</div>
+          <button onClick={() => setCounter(counter - 1)}>-</button>
+        </div>
+      )
+    }
+
+    ReactDOM.render(
+      <App />,
+      document.getElementById('app')
+    )
+    </script>
+  </body>
+</html>
