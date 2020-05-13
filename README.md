@@ -6,22 +6,22 @@ A collection of scripts from day2day tasks to env setup
 
 ```sh
 # Provision Macos for General fullstack dev
-curl https://raw.githubusercontent.com/ibandominguez/scripts/master/macos/dev-provisioning.sh | sh
+curl https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/macos/dev-provisioning.sh | sh
 
 # Provison Ubuntu for General fullstack dev
-curl https://github.com/ibandominguez/scripts/raw/master/ubuntu/dev-provisioning.sh | sh
+curl https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/dev-provisioning.sh | sh
 
 # Install vim + plugins (Macos, Ubuntu) requires [curl, git]
-curl https://raw.githubusercontent.com/ibandominguez/scripts/master/utils/install-vim.sh | sh
+curl https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/utils/install-vim.sh | sh
 
 # Install ohmyzh (Ubuntu)
-curl https://raw.githubusercontent.com/ibandominguez/scripts/master/ubuntu/install-ohmyzsh.sh | sh
+curl https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/ubuntu/install-ohmyzsh.sh | sh
 
 # Install Numix (GUI - Ubuntu)
-curl https://raw.githubusercontent.com/ibandominguez/scripts/master/ubuntu/install-numix.sh | sh
+curl https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/ubuntu/install-numix.sh | sh
 
 # Install cinamon (Ubuntu)
-https://raw.githubusercontent.com/ibandominguez/scripts/master/ubuntu/cinnamon.sh
+curl https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/ubuntu/cinnamon.sh | sh
 ```
 
 ## License
