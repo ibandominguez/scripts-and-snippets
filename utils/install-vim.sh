@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Requirements: [ curl, git ]
-# Run: curl https://raw.githubusercontent.com/ibandominguez/scripts/master/utils/install-vim.sh | bash
+# Run: curl https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/utils/install-vim.sh | bash
 # To get vim installed in your machine 
 
 # Download Vundle Plugin Manager
