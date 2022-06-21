@@ -7,73 +7,73 @@ if [[ $UID == 0 ]]; then
   exit 1
 fi
 
-# packages
+# formulaes
 
-packages=(
-  homebrew/php/php71
+formulaes=(
+  # Node.js and npm and yarn commands
+  node
+  yarn
+  # Install php and composer
+  php
   mcrypt
-  php71-mcrypt
+  composer
+  # python
+  python
+  # Databases
   sqlite3
   mysql
-  gphoto2
-  redis
-  node
-  imagemagick
-  graphicsmagick
   postgresql
   mongodb
+  # Image manipulation
+  imagemagick
+  graphicsmagick
+  # Devops
   heroku
+  awscli
+  # VCS
   git
-  brew-cask
-  homebrew/php/composer
-  nginx
-  homebrew/apache/httpd24
+  # Required terminal utilities
   tree
   jq
   curl
-  android-sdk
-  python
-  docker
-  boot2docker
-  install
+  wget
   sdl2
   sdl2_image
   sdl2_ttf
   sdl2_mixer
-  gstreamer
-  yarn
-  watchman
-  awscli
 )
 
 casks=(
+  # Browsers
+  opera
   google-chrome
   firefox
-  mysqlworkbench
-  virtualbox
-  vagrant
-  vagrant-manager
+  # Databases management
+  beekeeper-studio
+  # Text editor
+  visual-studio-code
+  # Devops (Docker)
+  docker
+  # Rectangleapp, window sorting utility
+  # https://rectangleapp.com/
+  rectangle
+  # Gimp OpenSource image editing
+  gimp
+  # FTP Utility tool
   filezilla
-  atom
-  skype
-  java
-  sequel-pro
-  arduino
-  opera
+  # Compressed files
+  betterzipql
+  # File preview enhancers
   qlmarkdown
   quicklook-json
   qlprettypatch
-  betterzipql
   qlimagesize
   webpquicklook
-  android-studio
-  Caskroom/cask/gimp
-  wireshark
 )
 
 # Command Line Tools
 
-echo "LOG => installing xcode"
+echo "LOG => installing xcode command line tools"
 xcode-select --install
 
 # install homebrew
@@ -82,29 +82,28 @@ echo "LOG => installing homebrew"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor && brew update && brew upgrade
 
-# homebrew taps
+# formulaes
 
-brew tap homebrew/dupes
-brew tap caskroom/homebrew-cask
-brew tap homebrew/php
-
-# brewPackages
-
-echo "LOG => installing brew packages"
-for i in "${brewPackages[@]}"
+echo "LOG => installing brew formulaes"
+for i in "${formulaes[@]}"
 	do
 	  brew install $i
 	done
 
-# casksPackages
+# casks
 
 echo "LOG => installing brew casks"
-for i in "${casksPackages[@]}"
+for i in "${casks[@]}"
 	do
-	  brew cask install $i
+	  brew install --cask $i
 	done
 
 # install zshrc
 
 echo "LOG => installing zshrc"
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+
+# install vim
+# Do not forget to open up vim and run :PluginInstall
+
+curl -L https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/utils/install-vim.sh | sh
