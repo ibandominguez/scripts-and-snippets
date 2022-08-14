@@ -10,29 +10,22 @@ fi
 # formulaes
 
 formulaes=(
-  # Node.js and npm and yarn commands
-  node
+  fig # Terminal enhanced
+  node 
   yarn
-  # Install php and composer
   php
   mcrypt
-  composer
-  # python
+  composer # php package manager
   python
-  # Databases
   sqlite3
   mysql
   postgresql
   mongodb
-  # Image manipulation
   imagemagick
   graphicsmagick
-  # Devops
   heroku
   awscli
-  # VCS
   git
-  # Required terminal utilities
   tree
   jq
   curl
