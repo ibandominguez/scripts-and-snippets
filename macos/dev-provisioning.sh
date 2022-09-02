@@ -10,12 +10,17 @@ fi
 # formulaes
 
 formulaes=(
-  fig # Terminal enhanced
+  fig
+  htop
+  fd
+  ripgrep
+  fzf
+  neovim
   node 
   yarn
   php
   mcrypt
-  composer # php package manager
+  composer
   python
   sqlite3
   mysql
