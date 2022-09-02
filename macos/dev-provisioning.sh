@@ -39,6 +39,8 @@ formulaes=(
   sdl2_image
   sdl2_ttf
   sdl2_mixer
+  jesseduffield/lazydocker/lazydocker
+  jesseduffield/lazygit/lazygit
 )
 
 casks=(
