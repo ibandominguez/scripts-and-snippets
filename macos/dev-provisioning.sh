@@ -41,6 +41,7 @@ formulaes=(
   sdl2_mixer
   jesseduffield/lazydocker/lazydocker
   jesseduffield/lazygit/lazygit
+  bpytop
 )
 
 casks=(
