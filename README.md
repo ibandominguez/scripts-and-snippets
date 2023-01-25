@@ -28,7 +28,7 @@ curl https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Ibán Domínguez
+Copyright (c) 2015 - present Iban Dominguez
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
