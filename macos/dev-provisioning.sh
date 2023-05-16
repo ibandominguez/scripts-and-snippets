@@ -43,6 +43,7 @@ formulaes=(
   jesseduffield/lazygit/lazygit
   bpytop
   dua-cli
+  tldr
 )
 
 casks=(
