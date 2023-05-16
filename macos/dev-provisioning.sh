@@ -16,7 +16,7 @@ formulaes=(
   ripgrep
   fzf
   neovim
-  node 
+  node
   yarn
   php
   mcrypt
@@ -42,6 +42,7 @@ formulaes=(
   jesseduffield/lazydocker/lazydocker
   jesseduffield/lazygit/lazygit
   bpytop
+  dua-cli
 )
 
 casks=(
