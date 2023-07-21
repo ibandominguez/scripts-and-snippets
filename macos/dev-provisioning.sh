@@ -10,8 +10,6 @@ fi
 # formulaes
 
 formulaes=(
-  fig
-  htop
   fd
   ripgrep
   fzf
@@ -54,7 +52,7 @@ casks=(
   # Databases management
   beekeeper-studio
   # Text editor
-  visual-studio-code
+  # visual-studio-code
   # Devops (Docker)
   docker
   # Rectangleapp, window sorting utility
@@ -106,7 +104,7 @@ for i in "${casks[@]}"
 echo "LOG => installing zshrc"
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
-# install vim
-# Do not forget to open up vim and run :PluginInstall
+# install LunarVim
 
-curl -L https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/utils/install-vim.sh | sh
+LV_BRANCH='release-1.3/neovim-0.9' 
+bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
