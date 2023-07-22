@@ -80,7 +80,7 @@ xcode-select --install
 # install homebrew
 
 echo "LOG => installing homebrew"
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew doctor && brew update && brew upgrade
 
 # formulaes
@@ -99,7 +99,18 @@ for i in "${casks[@]}"
 	  brew install --cask $i
 	done
 
-# install zshrc
+# install lunarvim
+
+# install nerdfonts
+
+brew tap homebrew/cask-fonts
+brew install font-hack-nerd-font
+
+# TODO: Clone dotfiles
+# TODO: install zshrc
+# TODO: install tmux
+
+# install ohmyzsh
 
 echo "LOG => installing zshrc"
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
