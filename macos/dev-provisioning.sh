@@ -70,6 +70,8 @@ casks=(
   qlprettypatch
   qlimagesize
   webpquicklook
+  # Remote desktop
+  anydesk
 )
 
 # Command Line Tools
