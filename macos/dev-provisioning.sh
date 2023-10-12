@@ -42,6 +42,7 @@ formulaes=(
   bpytop
   dua-cli
   tldr
+  chafa
 )
 
 casks=(
