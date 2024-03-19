@@ -7,6 +7,12 @@ if [[ $UID == 0 ]]; then
   exit 1
 fi
 
+# taps
+
+taps=(
+  homebrew/cask-fonts
+)
+
 # formulaes
 
 formulaes=(
@@ -43,6 +49,7 @@ formulaes=(
   dua-cli
   tldr
   chafa
+  font-hack-nerd-font
 )
 
 casks=(
@@ -86,6 +93,14 @@ echo "LOG => installing homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew doctor && brew update && brew upgrade
 
+# taps
+
+echo "LOG => installing brew taps"
+for i in "${taps[@]}"
+	do
+	  brew tap $i
+	done
+
 # formulaes
 
 echo "LOG => installing brew formulaes"
@@ -102,23 +117,12 @@ for i in "${casks[@]}"
 	  brew install --cask $i
 	done
 
-# install lunarvim
-
-# install nerdfonts
-
-brew tap homebrew/cask-fonts
-brew install font-hack-nerd-font
-
 # TODO: Clone dotfiles
 # TODO: install zshrc
 # TODO: install tmux
+# TODO: install Neovim and NvChad
 
 # install ohmyzsh
 
 echo "LOG => installing zshrc"
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-
-# install LunarVim
-
-LV_BRANCH='release-1.3/neovim-0.9' 
-bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
