@@ -127,5 +127,6 @@ cd ~ && git init && git remote add origin https://github.com/ibandominguez/dotfi
 echo "LOG => installing zshrc"
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
-# TODO: install ohmyzsh plugins 
-# using dotfiles func
+# install ohmyzsh plugins 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+install_ohmyzsh_plugins
