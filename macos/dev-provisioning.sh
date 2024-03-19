@@ -50,6 +50,7 @@ formulaes=(
   tldr
   chafa
   font-hack-nerd-font
+  tmux
 )
 
 casks=(
@@ -117,12 +118,14 @@ for i in "${casks[@]}"
 	  brew install --cask $i
 	done
 
-# TODO: Clone dotfiles
-# TODO: install zshrc
-# TODO: install tmux
-# TODO: install Neovim and NvChad
+# Clone dotfiles (NvChad, Tmux, OhMyZsh ...)
+
+cd ~ && git init && git remote add origin https://github.com/ibandominguez/dotfiles.git && git pull origin master
 
 # install ohmyzsh
 
 echo "LOG => installing zshrc"
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+
+# TODO: install ohmyzsh plugins 
+# using dotfiles func
