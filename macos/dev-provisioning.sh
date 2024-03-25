@@ -129,7 +129,7 @@ for i in "${casks[@]}"
 
 # Clone dotfiles (NvChad, Tmux, OhMyZsh ...)
 
-cd ~ && git init && git remote add origin https://github.com/ibandominguez/dotfiles.git && git pull origin master
+cd ~ && git init && git remote add origin https://github.com/ibandominguez/dotfiles.git && git pull origin master --force
 
 # install ohmyzsh
 
