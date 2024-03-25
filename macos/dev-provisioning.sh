@@ -61,7 +61,7 @@ casks=(
   # Databases management
   beekeeper-studio
   # Text editor
-  # visual-studio-code
+  visual-studio-code
   # Devops (Docker)
   docker
   # Rectangleapp, window sorting utility
@@ -81,6 +81,15 @@ casks=(
   webpquicklook
   # Remote desktop
   anydesk
+  vnc-viewer
+  # 3D Related
+  blender
+  ultimaker-cura
+  # miscelaneus
+  balenaetcher
+  raspberry-pi-imager
+  calibre
+  android-studio
 )
 
 # Command Line Tools
