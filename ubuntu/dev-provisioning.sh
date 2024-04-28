@@ -1,28 +1,88 @@
 #!/usr/bin/env bash
 
-APT_PPAS=ppa:ondrej/php pa:otto-kesselgulasch/gimp
-APT_PKGS=php7.0 php7.0-mysql php7.0-fpm nodejs npm build-essential libssl-dev chromium-browser filezilla arduino wireshark gimp zsh git-core
-NPM_PKGS=gulp bower yo webpack generator-karma generator-angular selenium-standalone firebase-tools nodemon sails protractor phantomjs forever nightwatch phonegap cordova jade express ionic react-native-cli jasmine-node
-CMP_PKGS=laravel/installer laravel/homestead phpunit/phpunit codeception/codeception squizlabs/php_codesniffer
+# Apt packages
+apt_deps=(
+  git
+  tree
+  php
+  jq
+  gcc
+  make
+  ripgrep
+  fzf
+  zsh
+  yarn
+  php
+  mcrypt
+  dotnet-sdk-8.0
+  composer
+  python2
+  python3
+  sqlite3
+  imagemagick
+  graphicsmagick
+  wget
+  calibre
+  filezilla
+)
 
-# Adding APT PPAS
-sudo add-apt-repository $APT_PPAS
+# Snap packages
+snap_deps=(
+  nodejs
+  curl
+  mysql
+  aws-cli
+  chafa
+  nvim
+  tmux
+  mysql
+  docker
+  beekeeper-studio
+  blender
+  cura-slicer
+  gimp
+  code
+  opera
+  firefox
+  android-studio
+  heroku
+  bpytop
+  arduino
+)
 
-# Update APT
-sudo apt-get update
+# Url installers
+# TODO: url installer lazygit, lazydocker, vnc-viewer, balena-etcher
+url_installers=(
+  https://cli-assets.heroku.com/install-ubuntu.sh
+  https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+  https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/ubuntu/install-anydesk.sh
+  https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/ubuntu/install-google-chrome.sh
+  https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-nerd-fonts.sh
+  https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-nerd-fonts.sh
+  https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh
+)
 
-# Update install 
-sudo apt-get install $APT_PCKGS
+# Install snaps
+for snap in "${snap_deps[@]}"; do
+  sudo snap install --classic "$snap"
+done
 
-# Instal npm global deps
-sudo npm install -g $NPM_PKGS
+# Instal apts
+sudo apt update
+sudo apt install -y "${apt_deps[@]}"
 
-# Install composer global deps
-sudo composer global require $CMP_PKGS
+# Install url installers
+for url in "${url_installers[@]}"; do
+  curl -L "$url" | sh
+done
 
-# Install ZSH
-curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+# Set zsh
 chsh -s `which zsh`
 
+# Clone dotfiles (NvChad, Tmux, OhMyZsh ...)
+cd ~ && git init
+git remote add origin https://github.com/ibandominguez/dotfiles.git 
+git pull origin master --force
+
 # Reboot system
-sudo shutdown -r 0
+# sudo reboot
