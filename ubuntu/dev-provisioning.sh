@@ -14,6 +14,7 @@ apt_deps=(
   yarn
   php
   mcrypt
+  gnome-tweak
   dotnet-sdk-8.0
   composer
   python2
@@ -51,14 +52,14 @@ snap_deps=(
 )
 
 # Url installers
-# TODO: url installer lazygit, lazydocker, vnc-viewer, balena-etcher
+# TODO: url installer vnc-viewer, balena-etcher
 url_installers=(
   https://cli-assets.heroku.com/install-ubuntu.sh
   https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh
   https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/ubuntu/install-anydesk.sh
   https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/ubuntu/install-google-chrome.sh
   https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-nerd-fonts.sh
-  https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-nerd-fonts.sh
+  https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-lazygit.sh
   https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh
 )
 
