@@ -21,7 +21,7 @@ curl https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master
 curl https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/ubuntu/install-numix.sh | sh
 
 # Install cinamon (Ubuntu)
-curl https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/ubuntu/cinnamon.sh | sh
+curl https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/ubuntu/install-cinnamon.sh | sh
 ```
 
 ## License
