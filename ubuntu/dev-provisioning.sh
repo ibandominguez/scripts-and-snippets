@@ -56,8 +56,7 @@ snap_deps=(
 # Url installers
 # TODO: url installer vnc-viewer, balena-etcher
 url_installers=(
-  https://cli-assets.heroku.com/install-ubuntu.sh
-  https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+  https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/ubuntu/install-ohmyzsh.sh
   https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/ubuntu/install-anydesk.sh
   https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/ubuntu/install-google-chrome.sh
   https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-nerd-fonts.sh
@@ -78,9 +77,6 @@ sudo apt install -y "${apt_deps[@]}"
 for url in "${url_installers[@]}"; do
   curl -L "$url" | sh
 done
-
-# Set zsh
-chsh -s `which zsh`
 
 # Clone dotfiles (NvChad, Tmux, OhMyZsh ...)
 cd ~ && git init
