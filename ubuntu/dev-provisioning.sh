@@ -54,7 +54,7 @@ snap_deps=(
 )
 
 # Url installers
-# TODO: url installer vnc-viewer, balena-etcher
+# TODO: url installer vnc-viewer
 url_installers=(
   https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/ubuntu/install-ohmyzsh.sh
   https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/ubuntu/install-anydesk.sh
