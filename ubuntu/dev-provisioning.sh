@@ -13,6 +13,8 @@ apt_deps=(
   zsh
   yarn
   php
+  php-gd
+  php-xml
   mcrypt
   gnome-tweak
   dotnet-sdk-8.0
