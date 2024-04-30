@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
-echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
-sudo apt update
-sudo apt install anydesk
+curl -o anydesk-installer.deb https://download.anydesk.com/linux/anydesk_6.3.2-1_amd64.deb
+sudo dpkg -i anydesk-installer.deb
+sudo apt install -f -y # Install required deps
+rm anydesk-installer.deb

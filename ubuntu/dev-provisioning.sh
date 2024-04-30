@@ -54,13 +54,13 @@ snap_deps=(
 )
 
 # Url installers
-# TODO: url installer vnc-viewer
 url_installers=(
-  https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/ubuntu/install-ohmyzsh.sh
-  https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/ubuntu/install-anydesk.sh
-  https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/master/ubuntu/install-google-chrome.sh
-  https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-nerd-fonts.sh
+  https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-anydesk.sh
+  https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-google-chrome.sh
   https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-lazygit.sh
+  https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-nerd-fonts.sh
+  https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-ohmyzsh.sh
+  https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-vncviewer.sh
   https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh
 )
 
