@@ -31,7 +31,6 @@ apt_deps=(
 
 # Snap packages
 snap_deps=(
-  nodejs
   curl
   mysql
   aws-cli
@@ -61,6 +60,7 @@ url_installers=(
   https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-nerd-fonts.sh
   https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-ohmyzsh.sh
   https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-vncviewer.sh
+  https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-node-with-nvm.sh
   https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh
 )
 
