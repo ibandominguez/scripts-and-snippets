@@ -1,4 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+# Fonts are updated every once in a while therefore it is always a 
+# good idea visit https://github.com/ryanoasis/nerd-fonts/releases
+# and check the reference below to the latest version
 
 declare -a fonts=(
   BitstreamVeraSansMono
