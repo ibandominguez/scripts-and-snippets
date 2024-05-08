@@ -20,7 +20,9 @@ apt_deps=(
   dotnet-sdk-8.0
   composer
   python2
+  python-pip
   python3
+  python3-pip
   sqlite3
   imagemagick
   graphicsmagick
@@ -52,6 +54,10 @@ snap_deps=(
   arduino
 )
 
+pip_deps=(
+  harlequin[mysql]
+)
+
 # Url installers
 url_installers=(
   https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-anydesk.sh
@@ -76,6 +82,11 @@ sudo apt install -y "${apt_deps[@]}"
 # Install url installers
 for url in "${url_installers[@]}"; do
   curl -L "$url" | sh
+done
+
+# Install pip deps
+for pdep in "${pip_deps[@]}"; do
+  pip3 install "$pdep"
 done
 
 # Clone dotfiles (NvChad, Tmux, OhMyZsh ...)
