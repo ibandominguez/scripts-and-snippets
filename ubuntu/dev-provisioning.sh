@@ -2,7 +2,8 @@
 
 # Apt packages
 apt_deps=(
-  net-tools
+  net-tools # Includes ifconfig
+  libfuse2 # Required to run AppImage's
   git
   tree
   php
