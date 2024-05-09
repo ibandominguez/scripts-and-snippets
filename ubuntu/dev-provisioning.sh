@@ -2,6 +2,7 @@
 
 # Apt packages
 apt_deps=(
+  net-tools
   git
   tree
   php
