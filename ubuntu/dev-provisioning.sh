@@ -45,7 +45,7 @@ snap_deps=(
   docker
   beekeeper-studio
   blender
-  cura-slicer
+  cura-slicer # TODO: Create install script since this version is not the latest
   gimp
   code
   opera
@@ -53,7 +53,7 @@ snap_deps=(
   android-studio
   heroku
   bpytop
-  arduino
+  arduino # TODO: Create install script since this version is not the latest
 )
 
 pip_deps=(
@@ -69,6 +69,7 @@ url_installers=(
   https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-ohmyzsh.sh
   https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-vncviewer.sh
   https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-node-with-nvm.sh
+  https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-stl-nautilus-preview.sh
   https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh
 )
 
