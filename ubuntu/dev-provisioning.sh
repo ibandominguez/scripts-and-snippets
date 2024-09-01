@@ -17,6 +17,17 @@ apt_deps=(
   php
   php-gd
   php-xml
+  php-mbstring
+  php-pdo
+  php-mysql
+  php-sqlite3
+  php-pgsql
+  php-sqlsrv
+  php-openssl
+  php-fileinfo
+  php-zip
+  php-ctype
+  php-json
   mcrypt
   gnome-tweak
   dotnet-sdk-8.0
@@ -31,6 +42,7 @@ apt_deps=(
   wget
   calibre
   filezilla
+  gthumb # Enhanced thumbnail viewer
 )
 
 # Snap packages
@@ -45,7 +57,6 @@ snap_deps=(
   docker
   beekeeper-studio
   blender
-  cura-slicer # TODO: Create install script since this version is not the latest
   gimp
   code
   opera
@@ -53,6 +64,7 @@ snap_deps=(
   android-studio
   heroku
   bpytop
+  cura-slicer # TODO: Create install script since this version is not the latest
   arduino # TODO: Create install script since this version is not the latest
 )
 
@@ -78,7 +90,7 @@ for snap in "${snap_deps[@]}"; do
   sudo snap install --classic "$snap"
 done
 
-# Instal apts
+# Install apts
 sudo apt update
 sudo apt install -y "${apt_deps[@]}"
 
