@@ -43,6 +43,7 @@ apt_deps=(
   calibre
   filezilla
   gthumb # Enhanced thumbnail viewer
+  xclip
 )
 
 # Snap packages
