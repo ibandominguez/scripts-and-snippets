@@ -59,7 +59,7 @@ snap_deps=(
   beekeeper-studio
   blender
   gimp
-  code
+  code # vscode
   opera
   firefox
   android-studio
