@@ -10,7 +10,6 @@ apt_deps=(
   jq
   gcc
   make
-  ripgrep
   fzf
   zsh
   yarn
@@ -22,18 +21,14 @@ apt_deps=(
   php-mysql
   php-sqlite3
   php-pgsql
-  php-sqlsrv
-  php-openssl
   php-fileinfo
   php-zip
   php-ctype
   php-json
   mcrypt
-  gnome-tweak
+  gnome-tweaks
   dotnet-sdk-8.0
   composer
-  python2
-  python-pip
   python3
   python3-pip
   sqlite3
@@ -44,11 +39,12 @@ apt_deps=(
   filezilla
   gthumb # Enhanced thumbnail viewer
   xclip
+  curl
+  ripgrep
 )
 
 # Snap packages
 snap_deps=(
-  curl
   mysql
   aws-cli
   chafa
@@ -67,10 +63,6 @@ snap_deps=(
   bpytop
   cura-slicer # TODO: Create install script since this version is not the latest
   arduino # TODO: Create install script since this version is not the latest
-)
-
-pip_deps=(
-  harlequin[mysql]
 )
 
 # Url installers
@@ -93,16 +85,13 @@ done
 
 # Install apts
 sudo apt update
-sudo apt install -y "${apt_deps[@]}"
+for apt in "${apt_deps[@]}"; do
+  sudo apt install -y "$apt"
+done
 
 # Install url installers
 for url in "${url_installers[@]}"; do
   curl -L "$url" | sh
-done
-
-# Install pip deps
-for pdep in "${pip_deps[@]}"; do
-  pip3 install "$pdep"
 done
 
 # Clone dotfiles (NvChad, Tmux, OhMyZsh ...)
