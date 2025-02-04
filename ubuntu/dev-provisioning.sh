@@ -41,6 +41,7 @@ apt_deps=(
   xclip
   curl
   ripgrep
+  bat
 )
 
 # Snap packages
