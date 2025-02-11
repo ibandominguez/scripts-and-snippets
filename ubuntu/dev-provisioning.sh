@@ -42,6 +42,9 @@ apt_deps=(
   curl
   ripgrep
   bat
+  nmap
+  vlc
+  ffmpeg
 )
 
 # Snap packages
