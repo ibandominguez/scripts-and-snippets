@@ -71,14 +71,14 @@ snap_deps=(
 
 # Url installers
 url_installers=(
-  https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-anydesk.sh
-  https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-google-chrome.sh
-  https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-lazygit.sh
-  https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-nerd-fonts.sh
-  https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-ohmyzsh.sh
-  https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-vncviewer.sh
-  https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-node-with-nvm.sh
-  https://github.com/ibandominguez/scripts-and-snippets/raw/master/ubuntu/install-stl-nautilus-preview.sh
+  https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/refs/heads/master/ubuntu/install-anydesk.sh
+  https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/refs/heads/master/ubuntu/install-google-chrome.sh
+  https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/refs/heads/master/ubuntu/install-lazygit.sh
+  https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/refs/heads/master/ubuntu/install-nerd-fonts.sh
+  https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/refs/heads/master/ubuntu/install-ohmyzsh.sh
+  https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/refs/heads/master/ubuntu/install-vncviewer.sh
+  https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/refs/heads/master/ubuntu/install-node-with-nvm.sh
+  https://raw.githubusercontent.com/ibandominguez/scripts-and-snippets/refs/heads/master/ubuntu/install-stl-nautilus-preview.sh
   https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh
 )
 
